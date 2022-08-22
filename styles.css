@@ -27,3 +27,8 @@ header {
 .marquinos-img {
     height: 160px;
 }
+
+.disable {
+    background-color: grey !important;
+    border-color: grey !important;
+}

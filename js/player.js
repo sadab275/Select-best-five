@@ -16,12 +16,14 @@ function selectPlayer(playerName, val) {
 }
 
 function getId(clicked, val) {
+    if (counter == 5) {
+        alert("No empty slot");
+        return;
+    }
     document.getElementById(clicked).classList.add("disable");
     document.getElementById(clicked).disabled = true;
     // console.log(clicked);
-    if (counter == 5) {
-        alert("No empty slot");
-    }
+
     // console.log(val);
     selectPlayer(clicked, val);
 }
